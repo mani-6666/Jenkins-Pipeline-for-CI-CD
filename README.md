@@ -5,6 +5,8 @@ This repository contains a simple Node.js app with a Jenkins pipeline for CI/CD.
 - Jenkins runs on an AWS t2.medium instance.
 - Docker builds and deploys the app.
 - Pipeline triggers on each commit.
+- sudo usermod -aG docker jenkins
+- sudo systemctl restart jenkins
 
 ## Pipeline Stages
 1. **Build**: Creates a Docker image.
